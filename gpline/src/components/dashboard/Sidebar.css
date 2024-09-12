@@ -1,0 +1,61 @@
+/* Universal text color class */
+.text-black .span {
+    color: black; /* Sets text color to black */
+}
+
+.sidebar {
+    width: 300px; /* Increased width for more space */
+    background-color: #f4f4f4;
+    padding: 30px; /* Increased padding for more space */
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd; /* Add top border to make it visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for separation */
+}
+
+.sidebar-section {
+    margin-bottom: 60px; /* Increased spacing between sections */
+}
+
+.sidebar-section h3 {
+    font-size: 18px; /* Slightly larger font size for headings */
+    margin-bottom: 30px; /* Increased space below each heading */
+    color: black; /* Heading color */
+}
+
+.sidebar-button {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px; /* Increased padding for buttons */
+    border: none;
+    background: transparent;
+    color: #14467B; /* Default text color for buttons */
+    cursor: pointer;
+    border-radius: 8px; /* Increased border radius for buttons */
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%; /* Make buttons take full width */
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+    text-align: left; /* Align text to the left */
+    font-size: 16px; /* Increased font size for better readability */
+    margin-bottom: 15px; /* Space between buttons */
+}
+
+/* Ensure text color is consistent in all states */
+.sidebar-button span {
+    color: inherit; /* Inherit color from parent button */
+}
+
+.sidebar-button:hover {
+    background-color: #e0e0e0; /* Grey background for hover effect */
+    color: #14467B; /* Ensure text color remains blue on hover */
+}
+
+.sidebar-button.active {
+    background-color: #14467B; /* Highlight background color for active button */
+    color: white; /* Ensure text color is white for active button */
+}
+
+.sidebar-icon {
+    margin-right: 15px; /* Increased space between icon and text */
+    font-size: 24px; /* Larger icon size for better visibility */
+    opacity: 0.7; /* Optional: reduce opacity for lighter appearance */
+}

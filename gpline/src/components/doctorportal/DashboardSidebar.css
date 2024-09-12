@@ -1,0 +1,95 @@
+.sidebar {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0px;
+    box-sizing: border-box;
+    flex-shrink: 0; 
+    @media (max-height: 750px) {
+        height: 400px;
+        overflow-y: auto;
+    }
+
+  }
+  
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 8px !important;
+    border-radius: 5px;
+    color: #b0b0b0; /* Default text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text */
+  }
+  
+  .sidebar-item .icon {
+    margin-right: 10px;
+  }
+  
+  .sidebar-item .icon svg path {
+    fill: #b0b0b0; /* Default icon color */
+    transition: fill 0.3s ease; /* Smooth transition for icon color */
+  }
+  
+  .sidebar-item:hover, .sidebar-item.active {
+    background-color: #1f4e7a; /* Background color on hover/active */
+    color: rgba(255, 255, 255, 1); /* Text color on hover/active */
+  }
+  
+  .sidebar-item:hover .icon svg path, .sidebar-item.active .icon svg path {
+    fill: white; /* Ensure the SVG icon path changes to white */
+  }
+  
+.DashboardSidebar-otr{
+    position: relative;
+    width: 250px;
+    height: calc(100vh - 89px);
+    border-right: 1px solid rgba(225, 225, 225, 1);
+}
+  .DashboardSidebar-inr{
+    padding: 22px 18px;
+  }
+  .DashboardSidebar-heading{
+    padding-bottom: 16px;
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: black;
+  }
+
+  .sidebar-label{
+    /* color: rgba(107, 114, 128, 1); */
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+
+  .sidebar-logout-otr {
+    position: absolute;
+    left: 24px;
+    bottom: 25px;
+}
+.sidebar-logout {
+    display: flex;
+    align-items: center;
+    gap: 0px 4px;
+    padding-bottom: 4px;
+    color: rgba(133, 128, 128, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    cursor: pointer;
+}
+.txt-help {
+    color: rgba(133, 128, 128, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    cursor: pointer;
+}
